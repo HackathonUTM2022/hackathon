@@ -1,0 +1,36 @@
+.main{
+    /* color:#f1f2f6;; */
+    width: 100%;
+}
+.img{
+    border-radius: 15px ;
+    /* text-align: center; */
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    margin-bottom: 30px;
+}
+
+.text{
+    font-size:25px;
+    font-weight:600;
+
+}
+
+.name{
+    color: #ff8600;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.gapp{
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+.content{
+    display: flex;
+    justify-content: center;
+}

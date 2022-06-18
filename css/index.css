@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+.card{
+    margin-bottom:12px;
+}
+.card a{
+    background-color: #ff8600;
+}

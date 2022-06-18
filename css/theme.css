@@ -1,0 +1,16 @@
+/*
+Background - #f1f2f6
+Text - #12130f
+Accent - #ff8600
+*/
+
+
+body{
+    color:#12130f;
+    background-color:#f1f2f6;
+}
+
+.navbar{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,211,163,1) 100%); 
+}
