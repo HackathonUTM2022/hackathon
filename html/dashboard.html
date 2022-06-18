@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a style="padding:0" class="navbar-brand" href="#">
-                <img style="overflow:hidden;float:left" src="../imgs/LogoH.png" alt="" class="d-inline-block" width="36" height="36">
+                <img style="float:left" src="../imgs/LogoH.png" alt="" class="d-inline-block" width="36" height="36">
                 <h2 style="display:inline;margin:0">Bonfire</h2>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,9 +28,14 @@
                         <a class="nav-link" href="#">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Placeholder</a>
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Chat</a>
                     </li>
-                </ul>
+                </ul>  
+                <div style="margin-right:12px;display:inline-block">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Find someone...">
+                </div>
+                <button style="float:right" class="btn btn-outline-secondary my-sm-2" type="submit">Search</button>
+                
                 <!--
                     The user is expected to have been logged in by now
                 <form class="d-flex">
@@ -48,123 +53,122 @@
     <div class="accordion" id="accordionPanelsStayOpenExample">
         <!-- Descriptor cards -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <button class="accordion-button bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-              <h2>Explore</h2>
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-            <div class="accordion-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div class="card">
-                                <img class="card-img-top" src="../imgs/hikers.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Experience</h5>
-                                    <p class="card-text">
-                                        Go out on an adventure with other people! Make friends, see new places and experience new things together
-                                    </p>
-                                    <a href="#" class="btn btn-sm">
-                                        Try Now
-                                    </a>
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <h2>Explore</h2>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card">
+                                    <img class="card-img-top" src="../imgs/hikers.jpg" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Experience</h5>
+                                        <p class="card-text">
+                                            Go out on an adventure with other people! Make friends, see new places and experience new things together
+                                        </p>
+                                        <a href="#" class="btn btn-sm">
+                                            Try Now
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card">
-                                <img class="card-img-top" src="../imgs/friends.jpeg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Community</h5>
-                                    <p class="card-text">
-                                        Meet potential freinds around you that share the same interests and hobbies as you do! As they say: the more, the merrier
-                                    </p>
-                                    <a href="#" class="btn btn-sm">
-                                        Check Out
-                                    </a>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <img class="card-img-top" src="../imgs/friends.jpeg" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Community</h5>
+                                        <p class="card-text">
+                                            Meet potential freinds around you that share the same interests and hobbies as you do! As they say: the more, the merrier
+                                        </p>
+                                        <a href="#" class="btn btn-sm">
+                                            Check Out
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card">
-                                <img class="card-img-top" src="../imgs/volunteers.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Volunteering</h5>
-                                    <p class="card-text">
-                                        Find more opportunities to contribute to your community while meeting others and gaining new experience and skills
-                                    </p>
-                                      
-                                    <a href="#" class="btn btn-sm">
-                                        See More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- Events Preview -->
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-            <button class="accordion-button bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
-              <h2>Events</h2>
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
-            <div class="accordion-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div class="card">
-                                <img class="card-img-top" src="..." alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">
-                                        Some random description
-                                    </p>
-                                    <a href="#" class="btn btn-sm">
-                                        See More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card">
-                                <img class="card-img-top" src="..." alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">
-                                        Some arbitrarily long ass random description
-                                    </p>
-                                      
-                                    <a href="#" class="btn btn-sm">
-                                        See More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card">
-                                <img class="card-img-top" src="..." alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor sit amet etc. etc. etc.
-                                    </p>
-                                      
-                                    <a href="#" class="btn btn-sm">
-                                        See More
-                                    </a>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <img class="card-img-top" src="../imgs/volunteers.jpg" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Volunteering</h5>
+                                        <p class="card-text">
+                                            Find more opportunities to contribute to your community while meeting others and gaining new experience and skills
+                                        </p>
+                                        
+                                        <a href="#" class="btn btn-sm">
+                                            See More
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-          </div>
+            </div>
+            <!-- Events Preview -->
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                <h2>Events</h2>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card">
+                                    <img class="card-img-top" src="..." alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some random description
+                                        </p>
+                                        <a href="#" class="btn btn-sm">
+                                            See More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <img class="card-img-top" src="..." alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some arbitrarily long ass random description
+                                        </p>
+                                        
+                                        <a href="#" class="btn btn-sm">
+                                            See More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card">
+                                    <img class="card-img-top" src="..." alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet etc. etc. etc.
+                                        </p>
+                                        <a href="#" class="btn btn-sm">
+                                            See More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 </body>
 </html>
