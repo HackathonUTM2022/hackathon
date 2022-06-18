@@ -8,3 +8,20 @@
 .card a{
     background-color: #ff8600;
 }
+
+.footer{  
+    background: rgb(18,19,15);
+    background: linear-gradient(180deg, rgba(18,19,15,1) 25%, rgba(150,79,0,1) 100%);  
+    color:#f1f2f6;
+    padding: 24px 0;
+}
+
+.footer a{
+    text-decoration:none;
+    color:#f1f2f6;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+    color:#ff8600;
+}
