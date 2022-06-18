@@ -1,35 +1,21 @@
-<!-- plh = Placeholder -->
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-        <title>Bonfire</title>
-    
-        <!-- Bootstrap core CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
-        <!-- Custom styles for this template -->
-        <link href="../css/login.css" rel="stylesheet">
-    </head>
-    <body class="text-center">
-        <form class="form-login">
-            <img class="mb-4" src="../imgs/LogoH.png" alt="" width="72" height="72">
-            <h1 class="h3 mb-3 font-weight-normal">Log In</h1>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-            <div class="checkbox mb-3">
-                <label>
-                <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
-            <a href="../index.html" class="link-dark" style="margin-right:16px;">
-                <div class="btn btn-lg btn-secondary btn-block">Return</div>
+<html lang="en"><head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Top navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a style="padding:0" class="navbar-brand" href="#">
+                <img style="overflow:hidden;float:left" src="../imgs/LogoH.png" alt="" class="d-inline-block" width="36" height="36">
+                <h2 style="display:inline;margin:0">Bonfire</h2>
             </a>
-<<<<<<< HEAD
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,6 +31,8 @@
                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Placeholder</a>
                     </li>
                 </ul>
+                <!--
+                    The user is expected to have been logged in by now
                 <form class="d-flex">
                     <a href="html/signup.html" class="link-dark" style="margin-right:16px;">
                         <div class="btn btn-transparent btn-block" type="text" style="background-color: #ff8600;">Sign up</div>
@@ -53,114 +41,130 @@
                         <div class="btn btn-outline-secondary">Log in</div>
                     </a>
                 </form>
+                -->
             </div>
         </div>
     </nav>
-    <!-- Events Preview -->
-    <h1 style="margin: 12px 20px">Explore</h1>    
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card">
-                    <img class="card-img-top" src="imgs/hikers.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Experience</h5>
-                        <p class="card-text">
-                            Go out on an adventure with other people! Make friends, see new places and experience new things together
-                        </p>
-                        <a href="#" class="btn btn-sm">
-                            Try Now
-                        </a>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <!-- Descriptor cards -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              <h2>Explore</h2>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card">
+                                <img class="card-img-top" src="../imgs/hikers.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Experience</h5>
+                                    <p class="card-text">
+                                        Go out on an adventure with other people! Make friends, see new places and experience new things together
+                                    </p>
+                                    <a href="#" class="btn btn-sm">
+                                        Try Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <img class="card-img-top" src="../imgs/friends.jpeg" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Community</h5>
+                                    <p class="card-text">
+                                        Meet potential freinds around you that share the same interests and hobbies as you do! As they say: the more, the merrier
+                                    </p>
+                                    <a href="#" class="btn btn-sm">
+                                        Check Out
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <img class="card-img-top" src="../imgs/volunteers.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Volunteering</h5>
+                                    <p class="card-text">
+                                        Find more opportunities to contribute to your community while meeting others and gaining new experience and skills
+                                    </p>
+                                      
+                                    <a href="#" class="btn btn-sm">
+                                        See More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img class="card-img-top" src="imgs/friends.jpeg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Community</h5>
-                        <p class="card-text">
-                            Meet potential freinds around you that share the same interests and hobbies as you do! As they say: the more, the merrier
-                        </p>
-                        <a href="#" class="btn btn-sm">
-                            Check Out
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img class="card-img-top" src="imgs/volunteers.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Volunteering</h5>
-                        <p class="card-text">
-                            Find more opportunities to contribute to your community while meeting others and gaining new experience and skills
-                        </p>
-                          
-                        <a href="#" class="btn btn-sm">
-                            See More
-                        </a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-    <h1 style="margin: 16px 20px">Events</h1>
-    <!-- Descriptor cards -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card">
-                    <img class="card-img-top" src="..." alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            Some random description
-                        </p>
-                        <a href="#" class="btn btn-sm">
-                            See More
-                        </a>
+        <!-- Events Preview -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+              <h2>Events</h2>
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card">
+                                <img class="card-img-top" src="..." alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                        Some random description
+                                    </p>
+                                    <a href="#" class="btn btn-sm">
+                                        See More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <img class="card-img-top" src="..." alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                        Some arbitrarily long ass random description
+                                    </p>
+                                      
+                                    <a href="#" class="btn btn-sm">
+                                        See More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card">
+                                <img class="card-img-top" src="..." alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet etc. etc. etc.
+                                    </p>
+                                      
+                                    <a href="#" class="btn btn-sm">
+                                        See More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img class="card-img-top" src="..." alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            Some arbitrarily long ass random description
-                        </p>
-                          
-                        <a href="#" class="btn btn-sm">
-                            See More
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img class="card-img-top" src="..." alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet etc. etc. etc.
-                        </p>
-                          
-                        <a href="#" class="btn btn-sm">
-                            See More
-                        </a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
+      </div>
 </body>
 </html>
-=======
-            <button class="btn btn-lg btn-block" style="background-color: #ff8600;" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">©2022 Bonfire Ltd. All rights reserved.</p>
-        </form>
-    </body>
-</html>
->>>>>>> f85d2539327d59cb2df1bc2a852c37353989fcc3
