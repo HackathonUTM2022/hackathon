@@ -19,13 +19,15 @@ function load_profile(){
             profile = value[id];
             document.getElementById("avatar").src = profile.avatar;
             document.getElementById("username").innerHTML = profile.name;
-            document.getElementById("description_body").value = profile.desc;
+            document.getElementById("description_body").value = profile.description;
             document.getElementById("name").innerHTML = profile.name;
             document.getElementById("e_mail").innerHTML = profile.mail;
             document.getElementById("age").innerHTML = profile.age;
             document.getElementById("gender").innerHTML = profile.gender;
-            if(profile.desc != undefined || profile.desc.length>0){
+            if(profile.desc != undefined){
+                if(profile.desc.length>0){
                 //Generate each element, remove the "add another" button at the 3rd tag.
+                }
             }
         },
         function(error){console.log(error)}
