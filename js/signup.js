@@ -12,7 +12,7 @@ async function fetchData(url) {
 }
 
 //Need to somehow check if this function works
-async function setData(url, data) {
+async function sendData(url, data) {
     try{
         let xhr = new XMLHttpRequest();
         xhr.open("POST",url);
@@ -70,17 +70,19 @@ async function validate_login(){
                 new_entry.mail = document.getElementById("inputEmail").value;
                 new_entry.pass = stringToHash(document.getElementById("inputPassword").value);
                 document.getElementById("male_gender").checked ? new_entry.gender = "male" : "female" ;
-                new_entry.img = "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/"+new_entry.id+".jpg"
+                new_entry.avatar = "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/"+new_entry.id+".jpg"
                 //geographical position is not included if user does not allow it to be so
                 coords = navigator.geolocation.getCurrentPosition(function(position){
                     new_entry.latitude = position.coords.latitude;
                     new_entry.longitude = position.coords.longitude;
+                new_entry.desc = "";
+                new_entry.prefs = "";
                 },
                 function(error) {
                   console.log("Location permission denied");
                 });
                 data = JSON.stringify(new_entry);
-                setData("https://hackathonutm2022.github.io/hackathon/users.json",data);
+                sendData("https://hackathonutm2022.github.io/hackathon/users.json",data);
             }
         },
         function(error){err.innerHTML = "Server Error, try again!"; console.log(error)}

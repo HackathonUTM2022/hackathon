@@ -66,7 +66,7 @@
 #description{
     position: relative;
     margin:20px auto;
-    border-radius: 8px;
+    border-radius: 6px;
     border: 2px solid #12130F;
 }
 
@@ -76,11 +76,12 @@
     padding:8px 0;
     text-align: center;
     background-color: #ff8600;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     border-bottom: 2px solid #12130F;
     font-weight: 700;
     font-size: 18px;
+    margin:0;
 }
 
 #description_edit{
@@ -94,7 +95,10 @@
     display:inline-block;
     width:100%;
     padding:8px 0;
+    height:13ch;
+    vertical-align: middle;
     text-align: center;
+    border: none;
 }
 
 #preferences p:first-child{

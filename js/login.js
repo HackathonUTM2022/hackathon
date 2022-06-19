@@ -22,6 +22,12 @@ function stringToHash(string) {
     }
     return hash;
 }
+//If you logged in previously with the "Remember Me" option on, you should skip login altogether.
+function check_for_cookies(){
+    if(document.cookie.length>0){
+        window.open("html/dashboard.html","_self");
+    }
+}
 
 function check_login(){
     let data = fetchData("https://hackathonutm2022.github.io/hackathon/users.json");
@@ -38,6 +44,7 @@ function check_login(){
                         if(!document.getElementById("remember").checked){
                             document.cookie = "ID="+element.id;
                         }else{
+                            //If login is passed, set a cookie to remember which user we're dealing with
                             //Setting expiriy date far off into the future
                             const d = new Date();
                             d.setTime(d.getTime() + (10000*24*60*60*1000));
