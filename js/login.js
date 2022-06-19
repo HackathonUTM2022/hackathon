@@ -26,7 +26,9 @@ function stringToHash(string) {
 function check_for_cookies(){
     if(document.cookie.length>0){
         window.open("html/dashboard.html","_self");
+        
     }
+    check_login();
 }
 
 function check_login(){
