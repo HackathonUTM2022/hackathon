@@ -11,9 +11,14 @@ async function fetchData(url) {
     }
 }
 
+//Need to somehow check if this function works
 async function setData(url, data) {
     try{
-        //POST query to server
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST",url);
+        xhr.setRequestHeader("Accept","application/json")
+        xhr.onload = () => console.log(xhr.responseText);
+        xhr.send(data);
     } catch (error) {
         console.error(error);
     }
@@ -75,8 +80,7 @@ async function validate_login(){
                   console.log("Location permission denied");
                 });
                 data = JSON.stringify(new_entry);
-                console.log(data);
-                //setData("https://hackathonutm2022.github.io/hackathon/users.json",data);
+                setData("https://hackathonutm2022.github.io/hackathon/users.json",data);
             }
         },
         function(error){err.innerHTML = "Server Error, try again!"; console.log(error)}
