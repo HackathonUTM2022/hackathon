@@ -1,0 +1,115 @@
+#avatar{
+    object-fit:cover; 
+    margin-right: 20px; 
+    min-width: 100px; 
+    width:15%; 
+    border:2px solid #ff8600;
+}
+
+#profile_container{
+    width:100%;
+    max-width:900px;
+}
+
+#personal_data{
+    font-size:18px;
+    line-height:48px;
+    min-width: 300px;
+    margin:0 auto;
+}
+
+#profile_main{
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    margin-bottom:28px;
+}
+
+#personal_data div{
+    display: inline-block;
+    width:100%;
+    border-width: 2px 2px 0;
+    border-style: solid;
+    border-color: #12130F;
+}
+
+#personal_data div:first-child{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#personal_data div:last-child{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-width: 2px;
+}
+
+#personal_data div label{
+    margin-left: 8px;
+    width: 20%;
+    min-width: 10ch;
+    border-right: 2px solid #12130F;
+    font-size:calc(16px + 6 * ((50vw - 320px) / 680));
+}
+
+#personal_data div span{
+    float:right;
+    margin-right: 8px;
+    font-size:calc(16px + 5 * ((50vw - 320px) / 680));
+}
+
+#preferences{
+    width:75%;
+}
+
+#description{
+    position: relative;
+    margin:20px auto;
+    border-radius: 8px;
+    border: 2px solid #12130F;
+}
+
+#description_header{
+    display:inline-block;
+    width:100%;
+    padding:8px 0;
+    text-align: center;
+    background-color: #ff8600;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 2px solid #12130F;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#description_edit{
+    position:absolute;
+    z-index:10;
+    top:3px;
+    left:3px;
+}
+
+#description_body{
+    display:inline-block;
+    width:100%;
+    padding:8px 0;
+    text-align: center;
+}
+
+#preferences p:first-child{
+    color:#ff8600;
+    font-weight: 700;
+    display:inline-block;
+    margin-left:calc((120vw - 260px) / 20);
+}
+
+#pref_add{
+    padding: 4px 8px;
+    border: 2px dashed gray;
+    border-radius: 6px;
+    display:inline-block;
+}
+
+#pref_add:active{
+    border-style: solid;
+}
