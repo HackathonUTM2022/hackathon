@@ -37,3 +37,7 @@ nav ul{
     text-decoration: underline;
     color:#ff8600;
 }
+
+.footer .footer-col-lf{
+    display:none;
+}

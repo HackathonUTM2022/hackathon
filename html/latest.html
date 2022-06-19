@@ -1,0 +1,111 @@
+<html lang="en"><head>
+    <title>Bonfire</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <style>
+        .col-sm{
+            width:49%;
+            display:inline-block;
+        }
+        .card{
+            float: left;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!--Top navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a style="padding:0" class="navbar-brand" href="#">
+                <img style="float:left" src="../imgs/LogoH.png" alt="" class="d-inline-block" width="36" height="36">
+                <h2 style="display:inline;margin:0">Bonfire</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meet Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Chat</a>
+                    </li>
+                </ul>  
+                <div style="margin-right:12px;display:inline-block">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Find someone...">
+                </div>
+                <button style="float:right" class="btn btn-outline-secondary my-sm-2" type="submit">Search</button>
+                
+                <!--
+                    The user is expected to have been logged in by now
+                <form class="d-flex">
+                    <a href="html/signup.html" class="link-dark" style="margin-right:16px;">
+                        <div class="btn btn-transparent btn-block" type="text" style="background-color: #ff8600;">Sign up</div>
+                    </a>
+                    <a href="html/login.html">
+                        <div class="btn btn-outline-secondary">Log in</div>
+                    </a>
+                </form>
+                -->
+            </div>
+        </div>
+    </nav>
+    <div style="margin: 0 6px">
+    <div class="col-sm">
+        <div class="card">
+            <img class="card-img-top" src="../imgs/hikers.jpg" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Experience</h5>
+                <p class="card-text">
+                    Go out on an adventure with other people! Make friends, see new places and experience new things together
+                </p>
+                <a href="#" class="btn btn-sm">
+                    Try Now
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <img class="card-img-top" src="../imgs/friends.jpeg" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Community</h5>
+                <p class="card-text">
+                    Meet potential freinds around you that share the same interests and hobbies as you do! As they say: the more, the merrier
+                </p>
+                <a href="#" class="btn btn-sm">
+                    Check Out
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card">
+            <img class="card-img-top" src="../imgs/volunteers.jpg" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Volunteering</h5>
+                <p class="card-text">
+                    Find more opportunities to contribute to your community while meeting others and gaining new experience and skills
+                </p>
+                
+                <a href="#" class="btn btn-sm">
+                    See More
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
