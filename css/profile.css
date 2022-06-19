@@ -9,6 +9,7 @@
 #profile_container{
     width:100%;
     max-width:900px;
+    margin-bottom: 20px;
 }
 
 #personal_data{
